@@ -1,0 +1,30 @@
+<script src="../../dist/kamea.min.js"></script>
+<script>
+  var store = new Kamea()
+  var domain = store.domain("counter", {
+    value: 0
+  })
+  domain.action("increment", function(state,action) {
+    state.set("value", state.value + 1);
+  })
+  domain.action("decrement", function(state,action) {
+    state.set("value", state.value - 1);
+  })
+  domain.action("increment_async", function(state,action,commit) {
+    setTimeout(function(){
+      commit(function(state){
+        state.set("value", state.value + 1);
+      })
+    },1000)
+  })
+
+  console.log(store.state.counter.value)
+
+  store.subscribe(function() {
+    console.log(store.state.counter.value)
+  })
+
+  store.dispatch({type:"increment"})
+  store.dispatch({type:"decrement"})
+  store.dispatch({type:"increment_async"})
+</script>

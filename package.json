@@ -1,0 +1,32 @@
+{
+  "name": "kamea",
+  "version": "0.0.4",
+  "description": "",
+  "main": "kamea.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "start": "webpack --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richardanaya/kamea.git"
+  },
+  "author": "Richard Anaya",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/richardanaya/kamea/issues"
+  },
+  "homepage": "https://github.com/richardanaya/kamea#readme",
+  "devDependencies": {
+    "freezer-js": "^0.11.2",
+    "webpack": "^1.14.0",
+    "babel-core": "^6.18.2",
+    "babel-loader": "latest",
+    "babel-preset-es2015": "latest",
+    "babel-preset-react": "latest",
+    "babel-preset-stage-0": "latest"
+  }
+}
