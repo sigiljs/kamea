@@ -70,5 +70,9 @@ Kamea.prototype.dispatch = function(action){
   }
 }
 
+Kamea.prototype.setState = function(state){
+	this._freezer.set(state);
+	this._publishNewState(this._freezer.get());
+}
 
 module.exports = Kamea;
