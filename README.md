@@ -12,7 +12,7 @@ Kamea is a store for producing immutable states in ES5. It was created to addres
 
 It has some nice features:
 * entirely OOP interface
-* [redux devtool](https://github.com/gaearon/redux-devtools) support for time travel
+* [redux devtool extension](http://zalmoxisus.github.io/redux-devtools-extension/) support for time travel
 * async state modifications without new actions
 * very easily request modifications to immutable state
 
