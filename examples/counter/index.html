@@ -1,4 +1,5 @@
 <script src="../../dist/kamea.min.js"></script>
+<button>Go</button>
 <script>
   var store = new Kamea()
   var domain = store.domain("counter", {
@@ -24,7 +25,9 @@
     console.log(store.state.counter.value)
   })
 
-  store.dispatch({type:"increment"})
-  store.dispatch({type:"decrement"})
-  store.dispatch({type:"increment_async"})
+  document.querySelector("button").addEventListener("click",function(){
+    store.dispatch({type:"increment"})
+    store.dispatch({type:"decrement"})
+    store.dispatch({type:"increment_async"})
+  })
 </script>
