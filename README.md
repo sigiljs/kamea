@@ -14,7 +14,7 @@ It has some nice features:
 * entirely OOP interface
 * [redux devtool extension](http://zalmoxisus.github.io/redux-devtools-extension/) support for time travel
 * async state modifications without new actions
-* very easily request modifications to immutable state
+* very easily request modifications to next immutable state
 
 # Installation
 CDN:
