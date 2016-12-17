@@ -19,7 +19,11 @@ It has some nice features:
 # Installation
 CDN:
 ```html
-<script src="https://unpkg.com/kamea@latest/dist/kamea.min.js"></script>
+<script src="https://unpkg.com/kamea@latest/kamea.min.js"></script>
+```
+If adding to a web component:
+```html
+<script src="https://unpkg.com/kamea@latest/kamea.html"></script>
 ```
 
 # Stores
