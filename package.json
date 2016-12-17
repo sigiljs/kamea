@@ -1,6 +1,6 @@
 {
   "name": "kamea",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "A simple immutable store for es5",
   "main": "src/kamea.js",
   "directories": {
