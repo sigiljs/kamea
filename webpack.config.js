@@ -1,11 +1,10 @@
 var path = require('path');
 var webpack = require('webpack');
 
-module.exports = {
+module.exports = [{
   devtool: '',
   entry: path.resolve('kamea.js'),
   output: {
-    path: path.resolve('dist'),
     filename: 'kamea.min.js',
     publicPath: '/',
     library: "Kamea",
@@ -32,4 +31,4 @@ module.exports = {
       }
     ]
   }
-};
+}];
