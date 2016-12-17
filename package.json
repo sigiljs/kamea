@@ -1,8 +1,8 @@
 {
   "name": "kamea",
-  "version": "0.0.9",
-  "description": "",
-  "main": "kamea.js",
+  "version": "0.0.10",
+  "description": "A simple immutable store for es5",
+  "main": "src/kamea.js",
   "directories": {
     "example": "examples"
   },
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/richardanaya/kamea.git"
+    "url": "git+https://github.com/sigiljs/kamea.git"
   },
   "author": "Richard Anaya",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/richardanaya/kamea/issues"
+    "url": "https://github.com/sigiljs/kamea/issues"
   },
-  "homepage": "https://github.com/richardanaya/kamea#readme",
+  "homepage": "https://github.com/sigiljs/kamea#readme",
   "devDependencies": {
     "babel-eslint": "^6.1.2",
     "eslint": "^3.12.2",
