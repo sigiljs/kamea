@@ -23,7 +23,7 @@ CDN:
 ```
 If adding to a web component:
 ```html
-<script src="https://unpkg.com/kamea@latest/kamea.html"></script>
+<link rel="import" href="https://unpkg.com/sigiljs@latest/sigil.html">
 ```
 
 # Stores
