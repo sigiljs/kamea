@@ -3,7 +3,7 @@ var webpack = require('webpack');
 
 module.exports = [{
   devtool: '',
-  entry: path.resolve('kamea.js'),
+  entry: path.resolve('src','kamea.js'),
   output: {
     filename: 'kamea.min.js',
     publicPath: '/',
@@ -12,23 +12,6 @@ module.exports = [{
   },
 
   plugins: [
-    new webpack.optimize.UglifyJsPlugin({minimize: true})
-  ],
-  module: {
-    loaders: [
-      {
-        "test": /\.js?$/,
-        "exclude": /node_modules/,
-        "loader": "babel",
-        "query": {
-          "presets": [
-            "es2015",
-            "react",
-            "stage-0"
-          ],
-          "plugins": []
-        }
-      }
-    ]
-  }
+    new webpack.optimize.UglifyJsPlugin()
+  ]
 }];
